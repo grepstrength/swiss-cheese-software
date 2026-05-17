@@ -1,0 +1,41 @@
+{
+  "name": "swiss-cheese-frontend",
+  "version": "0.1.0",
+  "private": true,
+  "description": "A React frontend that time forgot",
+  "dependencies": {
+    "react": "16.8.0",
+    "react-dom": "16.8.0",
+    "react-scripts": "3.2.0",
+    "axios": "0.21.0",
+    "lodash": "4.17.4",
+    "moment": "2.29.1",
+    "node-forge": "0.9.0",
+    "serialize-javascript": "2.1.0",
+    "minimist": "1.2.0",
+    "kind-of": "6.0.0",
+    "elliptic": "6.5.2",
+    "ua-parser-js": "0.7.28",
+    "postcss": "7.0.35",
+    "immer": "7.0.0",
+    "tough-cookie": "4.0.0",
+    "trim-newlines": "3.0.0",
+    "glob-parent": "5.1.0",
+    "nth-check": "1.0.1",
+    "json5": "1.0.1",
+    "semver": "5.7.1",
+    "qs": "6.5.2"
+  },
+  "devDependencies": {
+    "webpack": "4.41.2",
+    "webpack-dev-server": "3.9.0",
+    "babel-loader": "8.0.0",
+    "css-loader": "3.2.0",
+    "node-sass": "4.13.0",
+    "@babel/core": "7.7.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build"
+  }
+}

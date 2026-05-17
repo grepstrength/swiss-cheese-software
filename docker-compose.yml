@@ -1,0 +1,54 @@
+version: "3.8"
+
+# Docker Compose for Swiss Cheese Software
+# "It's behind a firewall" — famous last words
+
+services:
+  backend:
+    build: ./backend
+    ports:
+      - "8000:8000"
+    environment:
+      - DATABASE_URL=postgres://admin:SuperSecretP@ss123!@db:5432/acmedb
+      - JWT_SECRET=super-secret-jwt-key-that-should-be-in-vault
+      - STRIPE_SECRET_KEY=sk_live_51N3x4mPl3K3yTh4tL00ksR34lButIsF4k3
+      - SENDGRID_API_KEY=SG.f4k3s3ndgr1dk3y.th1s1sf4k3butl00ksr34l1st1c
+      - AWS_ACCESS_KEY_ID=AKIAIOSFODNN7EXAMPLE
+      - AWS_SECRET_ACCESS_KEY=wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY
+      - DEBUG=true
+    depends_on:
+      - db
+      - redis
+
+  frontend:
+    build: ./frontend
+    ports:
+      - "3000:3000"
+
+  db:
+    image: postgres:11
+    environment:
+      - POSTGRES_USER=admin
+      - POSTGRES_PASSWORD=SuperSecretP@ss123!
+      - POSTGRES_DB=acmedb
+    ports:
+      - "5432:5432"  # Exposed to the world, naturally
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+
+  redis:
+    image: redis:5
+    command: redis-server --requirepass r3d1sP@ssw0rd
+    ports:
+      - "6379:6379"  # Also exposed, because why not
+
+  mongo:
+    image: mongo:4.0
+    environment:
+      - MONGO_INITDB_ROOT_USERNAME=root
+      - MONGO_INITDB_ROOT_PASSWORD=m0ng0r00t
+    ports:
+      - "27017:27017"  # Triple exposed
+
+volumes:
+  pgdata:

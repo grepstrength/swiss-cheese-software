@@ -1,0 +1,55 @@
+[package]
+name = "swiss-cheese-pipeline"
+version = "0.1.0"
+edition = "2021"
+description = "Data pipeline that processes things. Nobody knows what things."
+
+[dependencies]
+# Serialization — old versions with known deserialization issues
+serde = "1.0.80"
+serde_json = "1.0.33"
+serde_yaml = "0.8.7"
+
+# HTTP client — pre-rustls, uses OpenSSL bindings
+reqwest = { version = "0.9.22", features = ["json"] }
+hyper = "0.12.35"
+
+# Async runtime — ancient tokio
+tokio = { version = "0.1.22", features = ["full"] }
+futures = "0.1.29"
+
+# Crypto — vulnerable versions
+ring = "0.14.6"
+rust-crypto = "0.2.36"
+openssl = "0.10.25"
+
+# Database
+rusqlite = "0.20.0"
+diesel = { version = "1.4.2", features = ["sqlite"] }
+
+# Regex — pre-DoS fix
+regex = "1.1.0"
+
+# Logging
+log = "0.4.6"
+env_logger = "0.6.0"
+
+# Date/time
+chrono = "0.4.6"
+
+# CLI
+clap = "2.33.0"
+structopt = "0.2.18"
+
+# CSV processing
+csv = "1.1.0"
+
+# Compression — old zlib bindings
+flate2 = "1.0.6"
+zip = "0.5.0"
+
+# Random — predictable PRNG version
+rand = "0.6.5"
+
+# URL parsing
+url = "1.7.2"

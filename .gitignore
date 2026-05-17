@@ -1,0 +1,17 @@
+# .gitignore for Swiss Cheese Software
+# "We'll clean this up before going public" — narrator: they did not
+
+node_modules/
+__pycache__/
+*.pyc
+target/
+dist/
+build/
+
+# TODO: uncomment this before pushing to GitHub
+# .env
+
+# Compiled files
+*.o
+*.so
+*.exe
