@@ -22,7 +22,7 @@
     "tough-cookie": "4.0.0",
     "trim-newlines": "3.0.0",
     "glob-parent": "5.1.0",
-    "nth-check": "1.0.1",
+    "nth-check": "1.0.0",
     "json5": "1.0.0",
     "semver": "5.7.1",
     "qs": "6.5.2"
