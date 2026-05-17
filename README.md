@@ -4,22 +4,22 @@
 
 > *"It works on my machine" — every developer who touched this codebase*
 
-**Swiss Cheese Software** is a deliberately vulnerable multi-language application designed for testing supply chain security scanners, dependency auditors, and SBOM generators. Every hole is intentional.
+**Swiss Cheese Software** is a deliberately vulnerable multi-language application designed for testing supply chain security scanners, dependency auditors, and SBOM generators. Every security hole is intentional.
 
-## 🕳️ What's Wrong With It?
+## What's Wrong With It?
 
-**Everything.**
+**Everything. Literally... everything**
 
 - 🔑 Hardcoded API keys, tokens, and credentials scattered throughout
 - 📦 Outdated dependencies with known critical CVEs
 - ⚰️ End-of-life packages that haven't been maintained in years
 - 🐍 Python backend with prototype-pollution-adjacent packages
-- ⚛️ React frontend frozen in 2019
+- ⚛️ React frontend from a couple *leap* years old
 - 🦀 Rust data pipeline with pre-1.0 crates
 - 🔓 Database credentials in plaintext
-- 🎯 The kind of codebase that makes security auditors cry
+- 🎯 The kind of codebase that keeps application security engineers employed
 
-## 📁 Structure
+## Structure
 
 ```
 swiss-cheese-software/
@@ -35,19 +35,19 @@ swiss-cheese-software/
 └── .env               # "Don't worry, it's in .gitignore" (it's not)
 ```
 
-## 🎯 Purpose
+## Purpose
 
 This repo exists as a test target for [RiskwareSupplyChain](https://riskwaresupplychain.com) — a supply chain risk intelligence tool that scans dependencies for CVEs, public exploits, supply chain compromises, and hardcoded secrets.
 
 **Try scanning this repo yourself:** paste `https://github.com/grepStrength/swiss-cheese-software` into the GitHub repo scanner.
 
-## ⚠️ Disclaimer
+## Disclaimer
 
 **DO NOT deploy this application.** It is intentionally insecure and exists solely for security testing purposes. All secrets in this repo are fake and non-functional.
 
-## 📝 License
+## License
 
-MIT — because even terrible code deserves freedom.
+MIT — I'm not sure who would try to make this proprietary. 
 
 ---
 
