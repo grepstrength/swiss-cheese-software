@@ -8,15 +8,15 @@
 
 ## What's Wrong With It?
 
-**Everything. Literally... everything**
+**Everything. Literally... everything.**
 
-- 🔑 Hardcoded API keys, tokens, and credentials scattered throughout
+- 🔑 Hardcoded API keys, tokens, and credentials left and right
 - 📦 Outdated dependencies with known critical CVEs
 - ⚰️ End-of-life packages that haven't been maintained in years
 - 🐍 Python backend with prototype-pollution-adjacent packages
-- ⚛️ React frontend from a couple *leap* years old
+- ⚛️ React frontend a couple *leap* years old
 - 🦀 Rust data pipeline with pre-1.0 crates
-- 🔓 Database credentials in plaintext
+- 🔓 Database credentials in plaintext for all the world to see
 - 🎯 The kind of codebase that keeps application security engineers employed
 
 ## Structure
@@ -25,11 +25,11 @@
 swiss-cheese-software/
 ├── frontend/          # React app (Node.js/npm) — circa 2019
 │   └── package.json
-├── backend/           # Python Flask API — dependency hell
+├── backend/           # Python Flask API with a convoluted hell of dependencies 
 │   └── requirements.txt
-├── data-pipeline/     # Rust batch processor — ancient crates
+├── data-pipeline/     # Rust batch processor with crates almost as old as the language itself
 │   └── Cargo.toml
-├── scripts/           # Deployment scripts with secrets
+├── scripts/           # Deployment scripts that might contain a (not very) secret or two
 │   ├── deploy.sh
 │   └── config.py
 └── .env               # "Don't worry, it's in .gitignore" (it's not)
@@ -43,7 +43,7 @@ This repo exists as a test target for [RiskwareSupplyChain](https://riskwaresupp
 
 ## Disclaimer
 
-**DO NOT deploy this application.** It is intentionally insecure and exists solely for security testing purposes. All secrets in this repo are fake and non-functional.
+**DO NOT deploy this application.** It is intentionally insecure and exists solely for security testing purposes. All secrets in this repo are fake and non-functional... I think.
 
 ## License
 
