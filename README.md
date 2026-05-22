@@ -37,7 +37,7 @@ swiss-cheese-software/
 
 ## Purpose
 
-This repo exists as a test target for [RiskwareSupplyChain](https://riskwaresupplychain.com) — a supply chain risk intelligence tool that scans dependencies for CVEs, public exploits, supply chain compromises, and hardcoded secrets.
+This repo exists as a test target for [RiskwareSupplyChain](https://riskwaresupplychain.com) —  a supply chain risk intelligence tool that scans dependencies for CVEs, public exploits, supply chain compromises, and hardcoded secrets.
 
 **Try scanning this repo yourself:** paste `https://github.com/grepStrength/swiss-cheese-software` into the GitHub repo scanner.
 
