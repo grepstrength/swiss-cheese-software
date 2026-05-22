@@ -19,7 +19,7 @@
 - 🔓 Database credentials in plaintext for all the world to see
 - 🎯 The kind of codebase that keeps application security engineers employed
 
-## Structure
+## Structure 
 
 ```
 swiss-cheese-software/
